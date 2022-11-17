@@ -1,0 +1,270 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap');
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-image: url('images/aboutbg.png');
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+section {
+    position: relative;
+    width: 100%;
+    height: 20vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+section:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(45deg, #FCE38A, #95E1D3);
+    border-radius: 0 0 50% 50%/0 0 100% 100%;
+    transform: scaleX(1.5);
+}
+
+section .content {
+    position: relative;
+    z-index: 1;
+    margin: 0 auto;
+    max-width: 800px;
+    text-align: center;
+}
+
+section .content h2 {
+    margin: 0;
+    padding: 0;
+    color: #B67F5F;
+    font-size: 3em;
+        
+}
+
+.section {
+    width: 100%;
+}
+
+.section .container {
+    width: 80%;
+    display: block;
+    margin: 0px auto;
+    padding: 25px 0px;
+}
+
+.container .title {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.container .title h1 {
+    text-transform: uppercase;
+    font-size: 45px;
+    color: #EAFFD0;
+}
+
+.container .title h1::after {
+    content: "";
+    height: 5px;
+    width: 100px;
+    background-color: #95E1D3;  
+    border-radius: 25px;
+    display: block;
+    margin: auto;
+}
+
+.content {
+    float: left;
+    width: 55%;
+}
+
+.image-section {
+    float: right;
+    width: 35%;
+}
+
+.image-section img {
+    width: 120%;
+    height: auto;
+}
+
+.content .article h3 {
+    color: #f5f5f5;
+    font-size: 17px;
+}
+
+.content .article p {
+    margin-top: 20px;
+    font-size: 17px;
+    line-height: 1.5;
+    color: #EAFFD0;
+    text-align: justify;
+    font-weight: 500;
+}
+
+.content .article .button {
+    margin-top: 50px;
+}
+
+.content .article .button a {
+    text-decoration: none;
+    padding: 8px 25px;
+    background-color: #95E1D3;
+    border-radius: 40px;
+    color: black;
+    font-size: 18px;
+    letter-spacing: 1.5px;
+}
+
+.content .article .button a:hover {
+    color: black;
+    background-color: #EAFFD0;
+    transition: 0.5s ease;
+}
+
+.container .social {
+    width: 100%;
+    clear: both;
+    margin-top: 50px;
+    text-align: center;
+    display: inline-block;
+}
+
+.container .social i {
+    color: black;
+    font-size: 22px;
+    height: 45px;
+    width: 45px;
+    border-radius: 50%;
+    line-height: 45px;
+    text-align: center;
+    background-color: #95E1D3;
+    margin: 0px 5px;
+}
+.container .social i:hover {
+    color: black;
+    background-color: #EAFFD0;
+    transition: 0.5s ease;
+}
+
+@media screen and (max-width: 768px) {
+    .section .container {
+        width: 80%;
+        display: block;
+        margin: auto;
+    }
+    .content {
+        float: none;
+        width: 100%;
+        display: block;
+        margin: auto;
+    }
+    .image-section {
+        float: none;
+        width: 100%;
+        margin-top: 50px;
+    }
+    .image-section img {
+        width: 100%;
+        height: auto;
+        display: block;
+        margin: auto;
+    }
+    .container .title h1{
+        text-align: center;
+        font-size: 30px;
+    }
+    .container .article .button {
+        text-align: center;
+    }
+    .container .article .button a {
+        padding: 6px 15px;
+        font-size: 16px;
+    }
+    .container .social {
+        font-size: 19px;
+        height: 35px;
+        width: 35px;
+        line-height: 35px;
+    }
+}
+
+
+
+
+/*--------------------------------------------------------------------------------------------------------*/
+
+.wrapper{
+    margin-top: 5%;
+    background-image: url('images/corebg.png');
+}
+  
+.wrapper h1{
+    font-family: 'Poppins', sans-serif;
+    font-size: 52px;
+    margin-bottom: 60px;
+    text-align: center;
+}
+  
+.team{
+    display: flex;
+    justify-content: center;
+    width: auto;
+    text-align: center;
+    flex-wrap: wrap;
+}
+  
+.team .team_member{
+    background: #fff;
+    margin: 5px;
+    margin-bottom: 50px;
+    width: 300px;
+    padding: 20px;
+    line-height: 20px;
+    color: #8e8b8b;  
+    position: relative;
+}
+  
+.team .team_member h3{
+    color: #81c644;
+    font-size: 26px;
+    margin-top: 50px;
+}
+  
+.team .team_member p.role{
+    color: #ccc;
+    margin: 12px 0;
+    font-size: 12px;
+    text-transform: uppercase;
+}
+  
+.team .team_member .team_img{
+    position: absolute;
+    top: -50px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background: #fff;
+  }
+  
+.team .team_member .team_img img{
+    width: 100px;
+    height: 100px;
+    padding: 5px;
+}
+
+

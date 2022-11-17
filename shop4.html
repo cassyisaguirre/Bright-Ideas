@@ -1,0 +1,822 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <!-- ADDTOCART STYLE -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <style>
+    .badge-notify{
+      background:red;
+      position:relative;
+      top: -20px;
+      right: 10px;
+    }
+    .my-cart-icon-affix {
+      padding-top: 15px;
+      padding-left: 12px;
+      padding-bottom: 10px;
+      position: fixed;
+      z-index: 999;
+      background: linear-gradient(to right,#F38181,#FCE38A,#95E1D3);
+      border-radius: 10px
+    }
+    </style>
+    <!-- ADDTOCART STYLE END -->
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SHOP | THE ATTIC LIBRARY</title>
+    <!-- google font -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,900&display=swap" rel="stylesheet">
+    <!-- boxicons -->
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+
+    <!-- app css -->
+    <link rel="stylesheet" href="shop.css">
+    <link rel="shortcut icon" type="image/png" href="images/logo - Copy.png">
+</head>
+
+<body>
+
+    <!-- TEST dont copy-->
+    <!--logic id="answer"></logic-->
+    <!-- TEST END-->
+
+    <!-- header -->
+    <header>
+        <!-- mobile menu -->
+        <div class="mobile-menu bg-second">
+            <a href="#" class="mb-logo">THE ATTIC LIBRARY</a>
+            <span class="mb-menu-toggle" id="mb-menu-toggle">
+                <i class='bx bx-menu'></i>
+            </span>
+        </div>
+        <!-- end mobile menu -->
+        <!-- main header -->
+        <div class="header-wrapper" id="header-wrapper">
+            <span class="mb-menu-toggle mb-menu-close" id="mb-menu-close">
+                <i class='bx bx-x'></i>
+            </span>
+            <!-- top header -->
+            <div class="bg-second">
+                <div class="top-header container">
+                    <ul class="devided">
+                        <li>
+                            <a href="#">863-30114</a>
+                        </li>
+                        <li>
+                            <a href="#">TCPinquire@gmail.com</a>
+                        </li>
+                    </ul>
+                    <ul class="devided">
+                        <li class="dropdown">
+                            <a href="">USD</a>
+                            <i class='bx bxs-chevron-down'></i>
+                            <ul class="dropdown-content">
+                                <li><a href="#">VND</a></li>
+                                <li><a href="#">JPY</a></li>
+                                <li><a href="#">EUR</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown">
+                            <a href="">ENGLISH</a>
+                            <i class='bx bxs-chevron-down'></i>
+                            <ul class="dropdown-content">
+                                <li><a href="#">VIETNAMESE</a></li>
+                                <li><a href="#">JAPANESE</a></li>
+                                <li><a href="#">FRENCH</a></li>
+                                <li><a href="#">SPANISH</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">ORDER TRACKING</a></li>
+                    </ul>
+                </div>
+            </div>
+            <!-- end top header -->
+            <!-- mid header -->
+            <div class="bg-main">
+                <div class="mid-header container1">
+                  <a class="navbar-brand" href="index.html"><img src="images/logoattic.png"></a>
+                    <div class="search">
+                        <input type="text" placeholder="Search">
+                        <i class='bx bx-search-alt'></i>
+                    </div>
+                    <ul class="user-menu">
+                        <li><a href="#"><i class='bx bx-bell'></i></a></li>
+                        <li><a href="index.php"><i class='bx bx-user-circle'></i></a></li>
+<!-- CART ICON -->      <li><a href="#"><i class='glyphicon glyphicon-shopping-cart my-cart-icon bx bx-cart'><span class="badge badge-notify my-cart-badge"></span></i></a></li>
+                    </ul>
+                </div>
+            </div>
+            <!-- end mid header -->
+            <!-- bottom header -->
+            <div class="bg-second">
+                <div class="bottom-header container">
+                    <ul class="main-menu">
+                        <li><a href="index.html">home</a></li>
+                        <!-- mega menu -->
+                        <li class="mega-dropdown">
+                            <a href="./shop.html">Shop<i class='bx bxs-chevron-down'></i></a>
+                            <div class="mega-content">
+                                <div class="row">
+                                    <div class="col-12">
+                                        <div class="box">
+                                            <h3>Categories</h3>
+                                            <ul>
+                                                <li><a href="ent.html">Arts and Crafts</a></li>
+                                                <li><a href="fichis.html">Books</a></li>
+                                                <li><a href="fic.html">Stationary</a></li>
+                                                <li><a href="his.html">Toys and Games</a></li>
+                                                <li><a href="hor.html">Workstation</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <!-- end mega menu -->
+                        <li><a href="about us.html">About Us</a></li>
+                        <li><a href="contact.html">contact</a></li>
+                    </ul>
+                </div>
+            </div>
+            <!-- end bottom header -->
+        </div>
+        <!-- end main header -->
+    </header>
+    <!-- end header -->
+
+    <!-- products content -->
+    <div class="bg-main">
+        <div class="container">
+            <div class="box">
+                <div class="breadcumb">
+                    <a href="index.html">home</a>
+                    <span><i class='bx bxs-chevrons-right'></i></span>
+                    <a href="shop.html">all products</a>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="box">
+              <div class="row">
+
+			  <div class="col-3 col-md-6 col-sm-12">
+                <div class="product-card">
+                    <div class="product-card-img">
+                        <img src="images/craft 1.1.png" alt="">
+                        <img src="images/craft 1.1.png " alt="">
+                    </div>
+                    <div class="product-card-info">
+                        <div class="product-btn1">
+                            <a href="./popsicle.html" class="btn-flat btn-hover btn-shop-now">Details</a>
+<!-- ADDTOCART -->          <button class="btn-flat btn-hover btn-cart-add my-cart-btn" data-id="ent11" data-name="Craft Popsicle Sticks (MULTI Color)" data-summary="summary 1" data-price="27.75" data-quantity="1" data-image="images/craft 1.1.png">
+                                <i class='bx bxs-cart-add'></i>
+                            </button>
+
+                        </div>
+                        <div class="product-card-name">
+                        <br>Craft Popsicle Sticks (MULTI Color) 
+                        </div>
+                        <div class="product-card-price">
+                            <span class="curr-price">₱ 27.75 </span>
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+
+			 <div class="col-3 col-md-6 col-sm-12">
+                <div class="product-card">
+                    <div class="product-card-img">
+                        <img src="images/craft 2.png" alt="">
+                        <img src="images/craft 2.png" alt="">
+                    </div>
+                    <div class="product-card-info">
+                        <div class="product-btn1">
+                            <a href="./crayola air dry.html" class="btn-flat btn-hover btn-shop-now">Details</a>
+<!-- ADDTOCART -->         <button class="btn-flat btn-hover btn-cart-add my-cart-btn" data-id="ent12" data-name="Crayola Air-Dry Clay Bucket" data-summary="summary 1" data-price="335.00" data-quantity="1" data-image="images/craft 2.png">
+                                <i class='bx bxs-cart-add'></i>
+                            </button>
+                        </div>
+                        <div class="product-card-name">
+                        <br>Crayola Air-Dry Clay Bucket
+                        </div>
+                        <div class="product-card-price">
+                            <span class="curr-price">₱ 335.00 </span>
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+
+			<div class="col-3 col-md-6 col-sm-12">
+                <div class="product-card">
+                    <div class="product-card-img">
+                        <img src="images/craft 3.1.png " alt="">
+                        <img src="images/craft 3.1.png" alt="">
+                    </div>
+                    <div class="product-card-info">
+                        <div class="product-btn1">
+                            <a href="./magical.html" class="btn-flat btn-hover btn-shop-now">Details</a>
+<!-- ADDTOCART -->          <button class="btn-flat btn-hover btn-cart-add my-cart-btn" data-id="ent13" data-name="Elmer's Magical Liquil Slime Activator Washable" data-summary="summary 1" data-price="189.75" data-quantity="1" data-image="images/craft 3.1.png">
+                                <i class='bx bxs-cart-add'></i>
+                            </button>
+
+                        </div>
+                        <div class="product-card-name">
+                        <br>Elmer's Magical Liquil Slime Activator Washable
+                        </div>
+                        <div class="product-card-price">
+                            <span class="curr-price">₱ 189.75</span>
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+
+			<div class="col-3 col-md-6 col-sm-12">
+                <div class="product-card">
+                    <div class="product-card-img">
+                        <img src="images/craft 4.1.png " alt="">
+                        <img src="images/craft 4.1.png" alt="">
+                    </div>
+                    <div class="product-card-info">
+                        <div class="product-btn1">
+                            <a href="./slime kit.html" class="btn-flat btn-hover btn-shop-now">Details</a>
+<!-- ADDTOCART -->          <button class="btn-flat btn-hover btn-cart-add my-cart-btn" data-id="ent14" data-name="Elmer's Slime Kit Jelly Rainbow" data-summary="summary 1" data-price="549.75" data-quantity="1" data-image="images/craft 4.1.png">
+                                <i class='bx bxs-cart-add'></i>
+                            </button>
+
+                        </div>
+                        <div class="product-card-name">
+                        <br>Elmer's Slime Kit Jelly Rainbow 
+                        </div>
+                        <div class="product-card-price">
+                            <span class="curr-price">₱ 549.75</span>
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+
+			<div class="col-3 col-md-6 col-sm-12">
+                <div class="product-card">
+                    <div class="product-card-img">
+                        <img src="images/craft 5.1.png" alt="">
+                        <img src="images/craft 5.1.png" alt="">
+                    </div>
+                    <div class="product-card-info">
+                        <div class="product-btn1">
+                            <a href="./juvale.html" class="btn-flat btn-hover btn-shop-now">Details</a>
+<!-- ADDTOCART -->          <button class="btn-flat btn-hover btn-cart-add my-cart-btn" data-id="ent15" data-name="Juvale Pipe Cleaners Craft Fuzzy Sticks Assorted 1200 Pack" data-summary="summary 1" data-price="919.88" data-quantity="1" data-image="images/craft 5.1.png">
+                                <i class='bx bxs-cart-add'></i>
+                            </button>
+
+                        </div>
+                        <div class="product-card-name">
+                        <br>Juvale Pipe Cleaners Craft Fuzzy Sticks Assorted 1200 Pack
+                        </div>
+                        <div class="product-card-price">
+                            <span class="curr-price">₱ 919.88</span>
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+
+			<div class="col-3 col-md-6 col-sm-12">
+                <div class="product-card">
+                    <div class="product-card-img">
+                        <img src="images/craft 6.1.png" alt="">
+                        <img src="images/craft 6.1.png" alt="">
+                    </div>
+                    <div class="product-card-info">
+                        <div class="product-btn1">
+                            <a href="./mont marte.html" class="btn-flat btn-hover btn-shop-now">Details</a>
+<!-- ADDTOCART -->          <button class="btn-flat btn-hover btn-cart-add my-cart-btn" data-id="ent16" data-name="Mont Marte Marker Set - Brilliant Glitter Markers 5pc" data-summary="summary 1" data-price="697.50" data-quantity="1" data-image="images/craft 6.1.png">
+                                <i class='bx bxs-cart-add'></i>
+                            </button>
+
+                        </div>
+                        <div class="product-card-name">
+                        <br>Mont Marte Marker Set - Brilliant Glitter Markers 5pc
+                        </div>
+                        <div class="product-card-price">
+                            <span class="curr-price">₱ 697.50</span>
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+
+			<div class="col-3 col-md-6 col-sm-12">
+                <div class="product-card">
+                    <div class="product-card-img">
+                        <img src="images/craft 7.1.png" alt="">
+                        <img src="images/craft 7.1.png" alt="">
+                    </div>
+                    <div class="product-card-info">
+                        <div class="product-btn1">
+                            <a href="./nara.html" class="btn-flat btn-hover btn-shop-now">Details</a>
+<!-- ADDTOCART -->          <button class="btn-flat btn-hover btn-cart-add my-cart-btn" data-id="ent17" data-name="Nara Air Dry Light Clay" data-summary="summary 1" data-price="84.00" data-quantity="1" data-image="images/craft 7.1.png">
+                                <i class='bx bxs-cart-add'></i>
+                            </button>
+
+                        </div>
+                        <div class="product-card-name">
+                        <br>Nara Air Dry Light Clay
+                        </div>
+                        <div class="product-card-price">
+                            <span class="curr-price">₱ 84.00</span>
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+
+			<div class="col-3 col-md-6 col-sm-12">
+                <div class="product-card">
+                    <div class="product-card-img">
+                        <img src="images/craft 8.png" alt="">
+                        <img src="images/craft 8.png" alt="">
+                    </div>
+                    <div class="product-card-info">
+                        <div class="product-btn1">
+                            <a href="./origami.html" class="btn-flat btn-hover btn-shop-now">Details</a>
+<!-- ADDTOCART -->        <button class="btn-flat btn-hover btn-cart-add my-cart-btn" data-id="ent18" data-name="Origami Paper Assorted Color 20 Sheets" data-summary="summary 1" data-price="14.75" data-quantity="1" data-image="images/craft 8.png">
+                                <i class='bx bxs-cart-add'></i>
+                            </button>
+
+                        </div>
+                        <div class="product-card-name">
+                        <br>Origami Paper Assorted Color 20 Sheets
+                        </div>
+                        <div class="product-card-price">
+                            <span class="curr-price">₱ 14.75</span>
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+
+            <div class="col-3 col-md-6 col-sm-12">
+                <div class="product-card">
+                    <div class="product-card-img">
+                        <img src="images/craft 9.png" alt="">
+                        <img src="images/craft 9.png" alt="">
+                    </div>
+                    <div class="product-card-info">
+                        <div class="product-btn1">
+                            <a href="./pony bead.html" class="btn-flat btn-hover btn-shop-now">Details</a>
+<!-- ADDTOCART -->        <button class="btn-flat btn-hover btn-cart-add my-cart-btn" data-id="ent19" data-name="Pony Bead - 9mm Transparent Multicolor 1000 pack" data-summary="summary 1" data-price="100.00" data-quantity="1" data-image="images/craft 9.png">
+                                <i class='bx bxs-cart-add'></i>
+                            </button>
+
+                        </div>
+                        <div class="product-card-name">
+                        <br>Pony Bead - 9mm Transparent Multicolor 1000 pack
+                        </div>
+                        <div class="product-card-price">
+                            <span class="curr-price">₱ 100.00</span>
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+
+            <div class="col-3 col-md-6 col-sm-12">
+                <div class="product-card">
+                    <div class="product-card-img">
+                        <img src="images/craft 10.jpg" alt="">
+                        <img src="images/craft 10.jpg" alt="">
+                    </div>
+                    <div class="product-card-info">
+                        <div class="product-btn1">
+                            <a href="./wooden dowel.html" class="btn-flat btn-hover btn-shop-now">Details</a>
+<!-- ADDTOCART -->        <button class="btn-flat btn-hover btn-cart-add my-cart-btn" data-id="ent20" data-name="Wooden Dowel Rods 50s Pack" data-summary="summary 1" data-price="300.00" data-quantity="1" data-image="images/craft 10.jpg">
+                                <i class='bx bxs-cart-add'></i>
+                            </button>
+
+                        </div>
+                        <div class="product-card-name">
+                        <br>Wooden Dowel Rods 50s Pack
+                        </div>
+                        <div class="product-card-price">
+                            <span class="curr-price">₱ 300.00 per 50s</span>
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+
+            <div class="col-3 col-md-6 col-sm-12">
+                <div class="product-card">
+                    <div class="product-card-img">
+                        <img src="images/nonfic 1.jpg" alt="">
+                        <img src="images/nonfic 1.jpg" alt="">
+                    </div>
+                    <div class="product-card-info">
+                        <div class="product-btn1">
+                            <a href="./birthdayletter.html" class="btn-flat btn-hover btn-shop-now">Details</a>
+<!-- ADDTOCART -->        <button class="btn-flat btn-hover btn-cart-add my-cart-btn" data-id="non1" data-name="Birthday Letters" data-summary="summary 1" data-price="400.00" data-quantity="1" data-image="images/nonfic 1.jpg">
+                                <i class='bx bxs-cart-add'></i>
+                            </button>
+
+                        </div>
+                        <div class="product-card-name">
+                        <br>Birthday Letters
+                        </div>
+                        <div class="product-card-price">
+                            <span class="curr-price">₱ 400.00 </span>
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+
+            <div class="col-3 col-md-6 col-sm-12">
+                <div class="product-card">
+                    <div class="product-card-img">
+                        <img src="images/nonfic 2.jpg" alt="">
+                        <img src="images/nonfic 2.jpg" alt="">
+                    </div>
+                    <div class="product-card-info">
+                        <div class="product-btn1">
+                            <a href="./dreamfrommyfather.html" class="btn-flat btn-hover btn-shop-now">Details</a>
+<!-- ADDTOCART -->        <button class="btn-flat btn-hover btn-cart-add my-cart-btn" data-id="non2" data-name="Dreams from My Father" data-summary="summary 1" data-price="699.00" data-quantity="1" data-image="images/nonfic 2.jpg">
+                                <i class='bx bxs-cart-add'></i>
+                            </button>
+
+                        </div>
+                        <div class="product-card-name">
+                        <br> Dreams from My Father
+                        </div>
+                        <div class="product-card-price">
+                            <span class="curr-price">₱ 699.00 </span>
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+
+            <div class="col-3 col-md-6 col-sm-12">
+                <div class="product-card">
+                    <div class="product-card-img">
+                        <img src="images/nonfic 3.png" alt="">
+                        <img src="images/nonfic 3.png" alt="">
+                    </div>
+                    <div class="product-card-info">
+                        <div class="product-btn1">
+                            <a href="./nologo.html" class="btn-flat btn-hover btn-shop-now">Details</a>
+<!-- ADDTOCART -->        <button class="btn-flat btn-hover btn-cart-add my-cart-btn" data-id="non3" data-name="No Logo" data-summary="summary 1" data-price="599.00" data-quantity="1" data-image="images/nonfic 3.png">
+                                <i class='bx bxs-cart-add'></i>
+                            </button>
+
+                        </div>
+                        <div class="product-card-name">
+                        <br>No Logo
+                        </div>
+                        <div class="product-card-price">
+                            <span class="curr-price">₱ 599.00</span>
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+
+            <div class="col-3 col-md-6 col-sm-12">
+                <div class="product-card">
+                    <div class="product-card-img">
+                        <img src="images/nonfic 4.png" alt="">
+                        <img src="images/nonfic 4.png" alt="">
+                    </div>
+                    <div class="product-card-info">
+                        <div class="product-btn1">
+                            <a href="./sixth.html" class="btn-flat btn-hover btn-shop-now">Details</a>
+<!-- ADDTOCART -->        <button class="btn-flat btn-hover btn-cart-add my-cart-btn" data-id="non4" data-name="The Sixth Extinction" data-summary="summary 1" data-price="750.00" data-quantity="1" data-image="images/nonfic 4.png">
+                                <i class='bx bxs-cart-add'></i>
+                            </button>
+
+                        </div>
+                        <div class="product-card-name">
+                        <br>The Sixth Extinction
+                        </div>
+                        <div class="product-card-price">
+                            <span class="curr-price">₱ 750.00</span>
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+
+            <div class="col-3 col-md-6 col-sm-12">
+                <div class="product-card">
+                    <div class="product-card-img">
+                        <img src="images/nonfic 5.png" alt="">
+                        <img src="images/nonfic 5.png" alt="">
+                    </div>
+                    <div class="product-card-info">
+                        <div class="product-btn1">
+                            <a href="./theyear.html" class="btn-flat btn-hover btn-shop-now">Details</a>
+<!-- ADDTOCART -->        <button class="btn-flat btn-hover btn-cart-add my-cart-btn" data-id="non5" data-name="The Year of Magical Thinking" data-summary="summary 1" data-price="550.00" data-quantity="1" data-image="images/nonfic 5.png">
+                                <i class='bx bxs-cart-add'></i>
+                            </button>
+
+                        </div>
+                        <div class="product-card-name">
+                        <br> The Year of Magical Thinking 
+                        </div>
+                        <div class="product-card-price">
+                            <span class="curr-price">₱ 550.00 </span>
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+
+            <div class="col-3 col-md-6 col-sm-12">
+                <div class="product-card">
+                    <div class="product-card-img">
+                        <img src="images/fic 1.png" alt="">
+                        <img src="images/fic 1.png" alt="">
+                    </div>
+                    <div class="product-card-info">
+                        <div class="product-btn1">
+                            <a href="./booklover.html" class="btn-flat btn-hover btn-shop-now">Details</a>
+    <!-- ADDTOCART -->          <button class="btn-flat btn-hover btn-cart-add my-cart-btn" data-id="fic1" data-name="Book Lovers" data-summary="summary 1" data-price="800.00" data-quantity="1" data-image="images/fic 1.png">
+                                <i class='bx bxs-cart-add'></i>
+                            </button>
+    
+                        </div>
+                        <div class="product-card-name">
+                        <br> Book Lovers
+                        </div>
+                        <div class="product-card-price">
+                            <span class="curr-price">₱ 800.00</span>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="col-3 col-md-6 col-sm-12">
+                <div class="product-card">
+                    <div class="product-card-img">
+                        <img src="images/fic 2.png" alt="">
+                        <img src="images/fic 2.png" alt="">
+                    </div>
+                    <div class="product-card-info">
+                        <div class="product-btn1">
+                            <a href="./olgadies.html" class="btn-flat btn-hover btn-shop-now">Details</a>
+    <!-- ADDTOCART -->          <button class="btn-flat btn-hover btn-cart-add my-cart-btn" data-id="fic2" data-name="Olga Dies Dreaming" data-summary="summary 1" data-price="650.00" data-quantity="1" data-image="images/fic 2.png">
+                                <i class='bx bxs-cart-add'></i>
+                            </button>
+    
+                        </div>
+                        <div class="product-card-name">
+                        <br> Olga Dies Dreaming
+                        </div>
+                        <div class="product-card-price">
+                            <span class="curr-price">₱ 650.00</span>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="col-3 col-md-6 col-sm-12">
+                <div class="product-card">
+                    <div class="product-card-img">
+                        <img src="images/fic 3.png" alt="">
+                        <img src="images/fic 3.png" alt="">
+                    </div>
+                    <div class="product-card-info">
+                        <div class="product-btn1">
+                            <a href="./themaid.html" class="btn-flat btn-hover btn-shop-now">Details</a>
+    <!-- ADDTOCART -->          <button class="btn-flat btn-hover btn-cart-add my-cart-btn" data-id="fic3" data-name="The Maid" data-summary="summary 1" data-price="800.00" data-quantity="1" data-image="images/fic 3.png">
+                                <i class='bx bxs-cart-add'></i>
+                            </button>
+    
+                        </div>
+                        <div class="product-card-name">
+                        <br>  The Maid
+                        </div>
+                        <div class="product-card-price">
+                            <span class="curr-price">₱ 800.00</span>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="col-3 col-md-6 col-sm-12">
+                <div class="product-card">
+                    <div class="product-card-img">
+                        <img src="images/fic 4.png" alt="">
+                        <img src="images/fic 4.png" alt="">
+                    </div>
+                    <div class="product-card-info">
+                        <div class="product-btn1">
+                            <a href="./toparadise.html" class="btn-flat btn-hover btn-shop-now">Details</a>
+    <!-- ADDTOCART -->          <button class="btn-flat btn-hover btn-cart-add my-cart-btn" data-id="fic4" data-name="To Paradise" data-summary="summary 1" data-price="800.00" data-quantity="1" data-image="images/fic 4.png">
+                                <i class='bx bxs-cart-add'></i>
+                            </button>
+    
+                        </div>
+                        <div class="product-card-name">
+                        <br> To Paradise
+                        </div>
+                        <div class="product-card-price">
+                            <span class="curr-price">₱ 800.00</span>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="col-3 col-md-6 col-sm-12">
+                <div class="product-card">
+                    <div class="product-card-img">
+                        <img src="images/fic 5.png" alt="">
+                        <img src="images/fic 5.png" alt="">
+                    </div>
+                    <div class="product-card-info">
+                        <div class="product-btn1">
+                            <a href="./violeta.html" class="btn-flat btn-hover btn-shop-now">Details</a>
+    <!-- ADDTOCART -->          <button class="btn-flat btn-hover btn-cart-add my-cart-btn" data-id="fic5" data-name="Violeta" data-summary="summary 1" data-price="850.00" data-quantity="1" data-image="images/fic 5.png">
+                                <i class='bx bxs-cart-add'></i>
+                            </button>
+    
+                        </div>
+                        <div class="product-card-name">
+                        <br> Violeta  
+                        </div>
+                        <div class="product-card-price">
+                            <span class="curr-price">₱ 850.00</span>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+			</div>
+          </div>
+
+
+
+
+          <div class="box">
+              <ul class="pagination">
+                  <li><a href="shop3.html"><i class='bx bxs-chevron-left'></i></a></li>
+                  <li><a href="shop.html">1</a></li>
+                  <li><a href="shop2.html">2</a></li>
+                  <li><a href="shop3.html">3</a></li>
+                  <li><a href="shop4.html"class="active">4</a></li>
+                  <li><a href="shop5.html">5</a></li>
+                  <li><a href="shop6.html">6</a></li>
+                  <li><a href="shop7.html">7</a></li>
+                  <li><a href="shop8.html">8</a></li>
+                  <li><a href="shop9.html">9</a></li>
+                  <li><a href="shop5.html"><i class='bx bxs-chevron-right'></i></a></li>
+              </ul>
+          </div>
+      </div>
+    <!-- end products content -->
+
+    <!-- footer -->
+    <div class="footer">
+
+        <div class="box-container">
+    
+            <div class="box">
+                <h3>additional info</h3>
+                <p>Searching for a diverse selection of arts and crafts? The Attic Library encourages you to learn while
+                    boosting your artistic and creative abilities. Find the latest up-to-date art supplies and DIY crafts.</p>
+            </div>
+    
+            <div class="box">
+                <h3>quick links</h3>
+                <a href="#">home</a>
+                <a href="#">about</a>
+                <a href="#">review</a>
+                <a href="#">contact</a>
+            </div>
+    
+            <div class="box">
+                <h3>follow us</h3>
+                    <a href="#">facebook</a>
+                    <a href="#">instagram</a>
+                    <a href="#">pinterest</a>
+                    <a href="#">twitter</a>
+            </div>
+    
+            <div class="box">
+                <h3>contact info</h3>
+                <div class="info">
+                    <i class="fas fa-phone"></i>
+                    <p> 0998-527-6381 <br> 863-30114 </p>
+                </div>
+                <div class="info">
+                    <i class="fas fa-envelope"></i>
+                    <p> TCPinquire@gmail.com <br> brightinc@gmail.com </p>
+                </div>
+                <div class="info">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <p> Robinsons Pioneer
+                        <br> Mandaluyong City, Philippines </p>
+                </div>
+            </div>
+    
+        </div>
+    
+        <h1 class="credit"> &copy; copyright @ 2020 by Bright Ideas Inc. </h1>
+    
+    </div>
+    <!-- end footer -->
+
+    <!-- app js -->
+    <script src="./js/app.js"></script>
+
+    <!-- ADDTOCART JS -->
+    <script src="js/jquery-2.2.3.min.js"></script>
+    <script type='text/javascript' src="js/bootstrap.min.js"></script>
+    <script type='text/javascript' src="js/jquery.mycart.js"></script>
+    <script type="text/javascript">
+    $(function () {
+
+      var goToCartIcon = function($addTocartBtn){
+        var $cartIcon = $(".my-cart-icon");
+        var $image = $('<img width="30px" height="30px" src="' + $addTocartBtn.data("image") + '"/>').css({"position": "fixed", "z-index": "999"});
+        $addTocartBtn.prepend($image);
+        var position = $cartIcon.position();
+        $image.animate({
+          top: position.top,
+          left: position.left
+        }, 500 , "linear", function() {
+          $image.remove();
+        });
+      }
+
+      $('.my-cart-btn').myCart({
+        currencySymbol: '₱',
+        classCartIcon: 'my-cart-icon',
+        classCartBadge: 'my-cart-badge',
+        classProductQuantity: 'my-product-quantity',
+        classProductRemove: 'my-product-remove',
+        classCheckoutCart: 'my-cart-checkout',
+        affixCartIcon: true,
+        showCheckoutModal: true,
+        numberOfDecimals: 2,
+
+        clickOnAddToCart: function($addTocart){
+          goToCartIcon($addTocart);
+        },
+        afterAddOnCart: function(products, totalPrice, totalQuantity) {
+          console.log("afterAddOnCart", products, totalPrice, totalQuantity);
+        },
+        clickOnCartIcon: function($cartIcon, products, totalPrice, totalQuantity) {
+          console.log("cart icon clicked", $cartIcon, products, totalPrice, totalQuantity);
+        },
+        checkoutCart: function(products, totalPrice, totalQuantity) {
+          document.getElementById('answer').innerHTML="THIS NO: " + totalPrice + "THIS NO: " +totalQuantity;
+        },
+        getDiscountPrice: function(products, totalPrice, totalQuantity) {
+          console.log("calculating discount", products, totalPrice, totalQuantity);
+          return totalPrice * 0.8;
+        }
+      });
+
+      $("#addNewProduct").click(function(event) {
+        var currentElementNo = $(".row").children().length + 1;
+        $(".row").append('<div class="col-md-3 text-center"><img src="images/img_empty.png" width="150px" height="150px"><br>product ' + currentElementNo + ' - <strong>$' + currentElementNo + '</strong><br><button class="btn btn-danger my-cart-btn" data-id="' + currentElementNo + '" data-name="product ' + currentElementNo + '" data-summary="summary ' + currentElementNo + '" data-price="' + currentElementNo + '" data-quantity="1" data-image="images/img_empty.png">Add to Cart</button><a href="#" class="btn btn-info">Details</a></div>')
+      });
+    });
+
+    </script>
+    <!-- ADDTOCART JS END -->
+
+</body>
+</html>
